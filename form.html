@@ -1,0 +1,56 @@
+<h1>Formulário</h1>
+<form action="http://localhost:3003/usuarios" method="post">
+    
+    <fieldset>
+        <legend>Cadastro dos clientes</legend>
+        <input type="hidden" name="id" value="3">
+        <label for='Texto'>Nome</label>
+        <input type="text" name="Texto" required>
+        
+        <label for='Texto'>Sexo</label>
+        <div>
+            <input type="radio" name="tipo" value="Masculino"> Masculino
+            <input type="radio" name="tipo" value="Feminino"> Feminino
+        </div>
+
+        <label for='Texto'>Idade</label>
+        <input type="number" name="numero">
+        
+        <label for='Texto'>Endereço</label>
+        <input type="text" name="Texto">
+
+        <label for='Texto'>Cidade</label>
+        <input type="text" name="Texto">
+
+        <label for='Texto'>Estado</label>
+        <select name="Estado">
+            <option value=''>Selecione</option>
+            <option value=''>Pará</option>
+            <option value=''>Maranhão</option>
+        </select>
+
+        <label for='Texto'>Tel Res</label>
+        <input type="number" name="Tel Res">
+
+        <label for='Texto'>Tel Cel</label>
+        <input type="number" name="Tel Cel">
+
+        <label for='Texto'>Email</label>
+        <input type="email" name="email">
+    
+    </fieldset>
+    <button>Incluir</button>
+</form>
+
+<style>
+    input,
+    select,
+    label{
+        display:block;
+        margin-bottom: 5px;
+    }
+    input[type=radio],
+    input[type=checkbox]{
+        display: inline;
+    }
+</style>
